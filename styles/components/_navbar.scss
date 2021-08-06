@@ -1,0 +1,35 @@
+.navbar {
+  margin: 2rem auto 4rem;
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style-type: none;
+
+    li {
+      margin-left: 1.6rem;
+
+      &.btn {
+        padding: 1rem 1.6rem;
+        border: 2px solid $primary;
+        border-radius: 3rem;
+        font-weight: 600;
+        color: $primary;
+        cursor: pointer;
+        transform: color 0.4s, background-color 0.4s;
+
+        &:hover {
+          color: #fff;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  border-radius: 6px;
+}

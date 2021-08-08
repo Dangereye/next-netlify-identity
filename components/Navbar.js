@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../stores/authContext";
+import { ImUser } from "react-icons/im";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,12 +23,19 @@ const Navbar = () => {
               <a>Guides</a>
             </Link>
           </li>
-          <li onClick={login} className="btn">
-            Login/Signup
-          </li>
-          <li onClick={logout} className="btn">
-            Logout
-          </li>
+          {!user && (
+            <li onClick={login} className="btn">
+              Login/Signup
+            </li>
+          )}
+          {user && (
+            <>
+              <li>{user.user_metadata.full_name}</li>
+              <li onClick={logout} className="btn">
+                Logout
+              </li>
+            </>
+          )}
         </ul>
       </nav>
       <div className="banner">

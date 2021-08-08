@@ -31,7 +31,7 @@ const Navbar = () => {
             )}
             {user && (
               <>
-                <li>{user.user_metadata.full_name}</li>
+                <li className="user">{user.email}</li>
                 <li onClick={logout} className="btn">
                   Logout
                 </li>

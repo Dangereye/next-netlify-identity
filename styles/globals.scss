@@ -1,6 +1,7 @@
 @import "partials/variables";
 @import "partials/typography";
 @import "components/navbar";
+@import "components/guides";
 
 // Reset
 
@@ -31,7 +32,12 @@ body {
   margin: 4rem auto;
 }
 
-.guides {
-  max-width: $page-width;
-  margin: 4rem auto;
+.error {
+  padding: 2rem;
+  color: crimson;
+  font-weight: 600;
+  text-align: center;
+  background: pink;
+  border: 1px solid crimson;
+  border-radius: $border-radius;
 }

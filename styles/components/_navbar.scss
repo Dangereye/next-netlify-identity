@@ -30,7 +30,9 @@
 }
 
 .banner {
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  overflow: hidden;
+  background-color: transparent;
+
+  img {
+    border-radius: $border-radius;
+  }
 }
